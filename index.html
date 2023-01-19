@@ -1,0 +1,41 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
+        <link rel="stylesheet" href="index.css">
+    </head>
+    <body>
+        <div class='main'>
+            <h1>Generate a<br><span style="color:#4ADF86">random password</span></h1>
+            <p>Never use an insecure password again.</p><br>
+            <form>
+                <input type="checkbox" class="box" id="box1" onclick="add_capital()">
+                <label for="box1">Add Capital letters</label><br>
+                <input type="checkbox" class="box" id="box2" onclick="add_number();">
+                <label for="box2">Add Numbers</label><br>
+                <input type="checkbox" class="box" id="box3" onclick="add_special();">
+                <label for="box3">Add Special Characters</label><br>
+                <input type="text" id="size">Size of password (max 15)
+            </form>
+            <button id='btn' onclick="generate();size_wanted()">Generate passwords</button>
+            <div class="line" id='error'></div>
+            <div class="output">
+                <input type="text" class="op" id="op1" disabled>
+                <input type="text" class="op" id="op2" disabled>
+            </div>
+            <!--
+                <dikkat>
+                    Ye copy button bnane ka try kra tha.. 
+                    button ki styling complete h
+                    problem ye h ki apn jo password generate krva rhe h use js se copy kese krvae
+                    bohot try krne pr bhi ye nhi aya isliye comment kr diya
+                <still not /dikkat>
+
+            <div class="output">
+                <button class="cp" id="cp1" onclick="">copy text</button>
+                <button class="cp" id="cp2" onclick="">copy text</button>
+            </div>
+            -->
+        </div>
+        <script src="index.js"></script>
+    </body>
+</html>
